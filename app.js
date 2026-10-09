@@ -16,3 +16,4 @@ function dr(){cx.clearRect(0,0,W,H);const ox=(mx-W/2)*.02,oy=(my-H/2)*.02;N.forE
 N.forEach((a,i)=>{const ax=a.x+ox*a.z,ay=a.y+oy*a.z;for(let j=i+1;j<N.length;j++){const b=N[j],bx=b.x+ox*b.z,by=b.y+oy*b.z,d=Math.hypot(ax-bx,ay-by);if(d<150){cx.strokeStyle=`rgba(0,191,255,${(1-d/150)*.25})`;cx.beginPath();cx.moveTo(ax,ay);cx.lineTo(bx,by);cx.stroke()}}
 cx.fillStyle=i%3?'rgba(0,229,255,.8)':'rgba(116,59,255,.9)';cx.beginPath();cx.arc(ax,ay,1.5+a.z,0,7);cx.fill()})}
 rs();addEventListener('resize',rs);dr();if(!rm){addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY});(function l(){dr();requestAnimationFrame(l)})()}
+document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>{$('#lk').classList.remove('o');$('#mb').setAttribute('aria-expanded','false')}));
