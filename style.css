@@ -40,3 +40,4 @@ header{z-index:30}.ph{width:160px;height:auto;border-radius:16px;border:2px soli
 .hero h1{font-size:clamp(1.9rem,4.2vw,3.2rem)}
 #vm{position:fixed;inset:0;z-index:100;background:rgba(3,8,20,.88);display:grid;place-items:center;padding:16px}#vm[hidden]{display:none}.vb{position:relative;width:min(900px,100%)}#vf{aspect-ratio:16/9;width:100%;background:#000;border-radius:12px;overflow:hidden;border:1px solid var(--bd)}#vf iframe{width:100%;height:100%;border:0}#vx{position:absolute;right:0;top:-44px;background:none;border:1px solid var(--bd);color:var(--tx);border-radius:8px;width:38px;height:38px;font-size:1.4rem;cursor:pointer}[data-yt]{margin-right:8px;margin-bottom:6px}
 #vm.v .vb{width:min(360px,100%,calc(78vh*9/16))}#vm.v #vf{aspect-ratio:9/16}
+.shot img{object-position:top}
