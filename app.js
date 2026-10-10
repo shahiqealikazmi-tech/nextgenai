@@ -17,3 +17,6 @@ N.forEach((a,i)=>{const ax=a.x+ox*a.z,ay=a.y+oy*a.z;for(let j=i+1;j<N.length;j++
 cx.fillStyle=i%3?'rgba(0,229,255,.8)':'rgba(116,59,255,.9)';cx.beginPath();cx.arc(ax,ay,1.5+a.z,0,7);cx.fill()})}
 rs();addEventListener('resize',rs);dr();if(!rm){addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY});(function l(){T++;dr();requestAnimationFrame(l)})()}
 document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>{$('#lk').classList.remove('o');$('#mb').setAttribute('aria-expanded','false')}));
+const vm=$('#vm'),vf=$('#vf');function vc(){vm.hidden=true;vf.innerHTML=''}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-yt]');if(b){vm.className=b.dataset.v?'v':'';vf.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+b.dataset.yt+'?autoplay=1&rel=0" title="Demo video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';vm.hidden=false;$('#vx').focus()}else if(e.target===vm||e.target.id==='vx')vc()});
+addEventListener('keydown',e=>{if(e.key==='Escape'&&!vm.hidden)vc()});
