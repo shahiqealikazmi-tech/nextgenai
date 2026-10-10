@@ -1,5 +1,5 @@
-# NextGenAI website (static + Vercel serverless form)
-Deploy: push this folder to GitHub, import it in Vercel (no build command, no framework), then set environment variables:
-- RESEND_API_KEY (from resend.com)  - CONTACT_TO (optional, defaults to shahiqealikazmi@gmail.com)  - MAIL_FROM (optional; use a verified domain in production)
-Before launch: replace YOUR-DOMAIN.vercel.app in sitemap.xml, robots.txt and the og:url tags; add the founder photo; review privacy and terms with a lawyer.
-Edit content by changing build.py and running `python3 build.py`.
+# NextGenAI website - upload guide
+1. Copy ALL files from this folder into your repo folder (replace existing files).
+2. Terminal: git add . ; git commit -m "full update" ; git push
+3. Vercel: set RESEND_API_KEY in Environment Variables, then Redeploy.
+Product status labels: edit S={...} at the top of build.py, then run python3 build.py.
